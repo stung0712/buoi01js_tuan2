@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Thông thường, với JavaScript, bạn muốn thao tác các phần tử HTML.
+
+Để làm như vậy, trước tiên bạn phải tìm các phần tử. Có nhiều hướng khác nhau để làm điều đó:
+
+Tìm phần tử HTML theo id
+Tìm phần tử HTML theo tên thẻ
+Tìm phần tử HTML theo tên lớp
+Tìm các phần tử HTML bằng bộ chọn CSS
+Tìm phần tử HTML bằng bộ sưu tập đối tượng HTML-->
+
+    <p id="intro">Finding HTML Elements by Id</p>
+
+    <script>
+        const element = document.getElementById("intro");
+        
+        document.getElementById("demo").innerHTML = 
+        "The text from the intro paragraph is: " + element.innerHTML;
+        const element1 = document.getElementsByTagName("p");
+        const x = document.getElementsByClassName("intro");
+        const y = document.querySelectorAll("p.intro");
+    </script>
+</body>
+</html>
